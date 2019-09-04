@@ -1,0 +1,191 @@
+{
+  "genesis_time": "2019-08-28T12:04:00.68167823Z",
+  "chain_id": "zpb-mainnet-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "zebi",
+            "amount": "10000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "staking": {
+      "pool": {
+        "not_bonded_tokens": "0",
+        "bonded_tokens": "0"
+      },
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 125,
+        "max_entries": 7,
+        "bond_denom": "zebi"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "accounts": [
+      {
+        "address": "zebi1qwdcyt4wlscgel0sc7wqlm27nfu558ngncpsgl",
+        "coins": [
+          {
+            "denom": "zebi",
+            "amount": "100000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0"
+      }
+    ],
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "zebi",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "distr": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "kvstore": {
+      "data_records": []
+    },
+    "auth": {
+      "collected_fees": [],
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "auth/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "ZPB-VN-01",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.010000000000000000",
+                    "max_rate": "0.050000000000000000",
+                    "max_change_rate": "0.005000000000000000"
+                  },
+                  "min_self_delegation": "100000000",
+                  "delegator_address": "zebi1qwdcyt4wlscgel0sc7wqlm27nfu558ngncpsgl",
+                  "validator_address": "zebivaloper1qwdcyt4wlscgel0sc7wqlm27nfu558ngpxy2c6",
+                  "pubkey": "zebivalconspub1zcjduepqpnsn8gw63p25mylhttscementt4ue7cthxtlknfygc066wgazp9q694l5t",
+                  "value": {
+                    "denom": "zebi",
+                    "amount": "1999900000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuBcz/DQTAakzsY/tSJ890E2XdFa0R0HizJsi1HsI3fs"
+                },
+                "signature": "7azHeFR0eiC38xMhYSk9Ot/meVbMa8jF7Xm+mqzqR0g7VBBtuoz70gtn4KOqFNrXvXu4Z5D0O8bKhcEqOB8weg=="
+              }
+            ],
+            "memo": "e4cd5d84fac08755e7bda77844211f02afd025d5@192.168.147.26:26656"
+          }
+        }
+      ]
+    },
+    "params": null,
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    }
+  }
+}
